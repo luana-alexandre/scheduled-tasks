@@ -2,7 +2,7 @@ import smtplib
 import pandas
 import datetime
 import random
-import OS
+import os
 
 with open("birthdays.csv", "r") as file:
     birthdays = pandas.read_csv(file)
