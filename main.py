@@ -36,7 +36,7 @@ for index, birthday_person in birthday_people.iterrows():
 
         with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
             smtp.starttls()
-            smtp.login(my_email, password)
+            smtp.login(MY_EMAIL, MY_PASSWORD)
             email_message =  f"Subject:Happy Birthday!\n\n{contents}"
             smtp.sendmail(from_addr=my_email, to_addrs=birthday_person["email"], msg=email_message)
 
